@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirim-Chiqim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <div id="login-screen" class="screen active">
+            <h2>🔒 Kirish</h2>
+            <input type="password" id="password" placeholder="Parol">
+            <button onclick="checkPassword()">Kirish</button>
+        </div>
+        <div id="home-screen" class="screen">
+            <h1>Kirim-Chiqim</h1>
+            <h2 id="balance-total">0 so'm</h2>
+            <div class="menu-grid">
+                <div onclick="navigateTo('input-screen')">+ Operatsiya</div>
+                <div onclick="showReport()">📊 Hisobot</div>
+            </div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
